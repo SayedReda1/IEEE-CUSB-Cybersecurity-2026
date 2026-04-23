@@ -11,8 +11,9 @@ try {
         
         $conn = getConnection();
         
-        // INTENTIONALLY VULNERABLE TO SQL INJECTION
-        $sql = "SELECT title, content, created_at FROM posts WHERE title LIKE '%$search_query%' OR content LIKE '%$search_query%';";
+        $sql = "SELECT title, content, created_at
+                FROM posts
+                WHERE title LIKE '%$search_query%' OR content LIKE '%$search_query%';";
         
         $results = $conn->query($sql);
     }

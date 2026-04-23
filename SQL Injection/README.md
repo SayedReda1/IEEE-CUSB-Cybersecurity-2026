@@ -1,4 +1,5 @@
 # SQL Injection
+[SQL Injection Slides](https://docs.google.com/presentation/d/1Oyc7yNclm6B2NEAjws8X7ACahXrqcrOZGxh9Ln16yPo/edit?usp=sharing)
 
 ## Session Tasks
 

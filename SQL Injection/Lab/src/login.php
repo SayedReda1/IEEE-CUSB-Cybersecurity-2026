@@ -10,7 +10,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     $conn = getConnection();
     
-    // INTENTIONALLY VULNERABLE TO SQL INJECTION
     $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
     $result = $conn->query($sql);
     
@@ -74,11 +73,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <button type="submit" class="btn btn-primary w-100">Login</button>
                         </form>
                         
-                        <div class="mt-3">
+                        <!-- <div class="mt-3">
                             <small class="text-muted">
                                 Demo credentials: admin/admin123, john/john123, alice/alice123
                             </small>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
